@@ -1,0 +1,409 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191015.160127.4588.0.001.json",
+    "dumpEventTime": "2019-10-15T16:01:27Z",
+    "dumpEventTimeStamp": "1571166087385",
+    "processId": 4588,
+    "cwd": "C:\\Users\\MAGAZINELUIZA\\3D Objects\\chat-teste",
+    "commandLine": [
+      "C:\\laragon\\bin\\nodejs\\node-v12\\node.exe",
+      "C:\\Users\\MAGAZINELUIZA\\3D Objects\\chat-teste\\node_modules\\react-scripts\\scripts\\start.js"
+    ],
+    "nodejsVersion": "v12.5.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.5.0",
+      "v8": "7.5.288.22-node.14",
+      "uv": "1.29.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.5.0/node-v12.5.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.5.0/node-v12.5.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.5.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home Single Language",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1992,
+        "user": 722515,
+        "nice": 0,
+        "sys": 473078,
+        "idle": 3145671,
+        "irq": 74046
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1992,
+        "user": 722515,
+        "nice": 0,
+        "sys": 473078,
+        "idle": 3145671,
+        "irq": 74046
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1992,
+        "user": 722515,
+        "nice": 0,
+        "sys": 473078,
+        "idle": 3145671,
+        "irq": 74046
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1992,
+        "user": 722515,
+        "nice": 0,
+        "sys": 473078,
+        "idle": 3145671,
+        "irq": 74046
+      }
+    ],
+    "host": "DESKTOP-OKLDR93"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7b55d6e09",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b55da704",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b55d9728",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b56c2f5b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5ea7e2e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5e9017a",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5d2197c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5cff963",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5cfdcbb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5d270ed",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5d28c8e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5d1fb43",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5d1e3d4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5d3ceb5",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5af30d3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7b5f50b1d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00000320ec1f1ee7",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 210550784,
+    "totalCommittedMemory": 210550784,
+    "usedMemory": 156895792,
+    "availableMemory": 1961457648,
+    "memoryLimit": 2132803584,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16757248,
+        "used": 2649984,
+        "available": 14107264
+      },
+      "old_space": {
+        "memorySize": 155856896,
+        "committedMemory": 155856896,
+        "capacity": 135826816,
+        "used": 135318528,
+        "available": 508288
+      },
+      "code_space": {
+        "memorySize": 3309568,
+        "committedMemory": 3309568,
+        "capacity": 2115872,
+        "used": 2115872,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 3411968,
+        "committedMemory": 3411968,
+        "capacity": 2780320,
+        "used": 2780320,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 13533184,
+        "committedMemory": 13533184,
+        "capacity": 13448824,
+        "used": 13448824,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550304,
+        "used": 550304,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16757248,
+        "used": 0,
+        "available": 16757248
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 21.687,
+    "kernelCpuSeconds": 5.093,
+    "cpuConsumptionPercent": 18.2177,
+    "maxRss": 239382528,
+    "pageFaults": {
+      "IORequired": 177195,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 5291,
+      "writes": 37
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\MAGAZINELUIZA\\3D Objects\\chat-teste",
+    "aliases": "C:\\laragon\\bin\\cmder\\config\\user-aliases.cmd",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\MAGAZINELUIZA\\AppData\\Roaming",
+    "architecture": "64",
+    "BABEL_ENV": "development",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132147733265260660",
+    "CMDER_ROOT": "C:\\laragon\\bin\\cmder",
+    "code": "C:\\Users\\MAGAZINELUIZA\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-OKLDR93",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DOCUMENT_ROOT": "C:/laragon/www",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "FULL_TITLE": "\"C:\\Users\\MAGAZINELUIZA\\3D Objects\\chat-teste\"",
+    "GIT_INSTALL_ROOT": "C:\\laragon\\bin\\cmder\\..\\git",
+    "HOME": "C:\\Users\\MAGAZINELUIZA",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\MAGAZINELUIZA",
+    "INIT_CWD": "C:\\Users\\MAGAZINELUIZA\\3D Objects\\chat-teste",
+    "LARAGON_ROOT": "C:\\laragon\\",
+    "LOCALAPPDATA": "C:\\Users\\MAGAZINELUIZA\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-OKLDR93",
+    "NODE": "C:\\laragon\\bin\\nodejs\\node-v12\\node.exe",
+    "NODE_ENV": "development",
+    "NODE_PATH": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"start\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.19.0 npm/? node/v12.5.0 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Program Files (x86)\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "start",
+    "npm_lifecycle_script": "react-scripts start",
+    "npm_node_execpath": "C:\\laragon\\bin\\nodejs\\node-v12\\node.exe",
+    "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_package_browserslist_development_1": "last 1 firefox version",
+    "npm_package_browserslist_development_2": "last 1 safari version",
+    "npm_package_browserslist_production_0": ">0.2%",
+    "npm_package_browserslist_production_1": "not dead",
+    "npm_package_browserslist_production_2": "not op_mini all",
+    "npm_package_dependencies_axios": "^0.19.0",
+    "npm_package_dependencies_bootstrap": "^4.3.1",
+    "npm_package_dependencies_jquery": "^3.4.1",
+    "npm_package_dependencies_react": "^16.9.0",
+    "npm_package_dependencies_reactstrap": "^8.0.1",
+    "npm_package_dependencies_react_dom": "^16.9.0",
+    "npm_package_dependencies_react_redux": "^7.1.1",
+    "npm_package_dependencies_react_scripts": "^3.2.0",
+    "npm_package_dependencies_redux": "^4.0.4",
+    "npm_package_dependencies_redux_thunk": "^2.3.0",
+    "npm_package_description": "In the project directory, you can run:",
+    "npm_package_eslintConfig_extends": "react-app",
+    "npm_package_name": "chat-app",
+    "npm_package_private": "true",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_scripts_build": "react-scripts build",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "npm_package_scripts_start": "react-scripts start",
+    "npm_package_scripts_test": "react-scripts test",
+    "npm_package_version": "0.1.0",
+    "NUMBER_OF_PROCESSORS": "4",
+    "NVM_HOME": "C:\\Users\\MAGAZINELUIZA\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OneDrive": "C:\\Users\\MAGAZINELUIZA\\OneDrive",
+    "OPENSSL_CONF": "C:\\laragon\\bin\\apache\\httpd-2.4.35-win64-VC15\\conf\\openssl.cnf",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\MAGAZI~1\\AppData\\Local\\Temp\\yarn--1571165938974-0.5579602030633208;C:\\Users\\MAGAZINELUIZA\\3D Objects\\chat-teste\\node_modules\\.bin;C:\\Users\\MAGAZINELUIZA\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\laragon\\bin\\nodejs\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\laragon\\bin\\nodejs\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\laragon\\bin\\nodejs\\node-v12\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Users\\MAGAZINELUIZA\\AppData\\Local\\Yarn\\config\\global\\node_modules\\.bin;C:\\Users\\MAGAZINELUIZA\\AppData\\Roaming\\npm;C:\\Users\\MAGAZINELUIZA\\AppData\\Roaming\\Composer\\vendor\\bin;;C:\\laragon\\bin\\laragon\\utils;C:\\laragon\\bin\\mysql\\mysql-5.7.24-winx64\\bin;C:\\laragon\\bin\\php\\php-7.2.19-Win32-VC15-x64;C:\\laragon\\bin\\composer;C:\\laragon\\bin\\apache\\httpd-2.4.35-win64-VC15\\bin;C:\\laragon\\bin\\redis\\redis-x64-3.2.100;C:\\laragon\\bin\\nodejs\\node-v12;C:\\laragon\\bin\\nginx\\nginx-1.16.0;C:\\laragon\\bin\\notepad++;C:\\laragon\\bin\\telnet;C:\\laragon\\bin\\ngrok;C:\\laragon\\bin\\git\\bin;C:\\laragon\\bin\\git\\cmd;C:\\laragon\\bin\\git\\usr\\bin;C:\\laragon\\bin\\git\\mingw64\\bin;C:\\laragon\\bin;C:\\laragon\\usr\\bin;C:\\laragon\\bin\\putty;C:\\laragon\\bin\\cmder\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\xamppp\\php;C:\\Users\\MAGAZINELUIZA\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\MAGAZINELUIZA\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\MAGAZINELUIZA\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\MAGAZINELUIZA\\AppData\\Roaming\\npm;C:\\Users\\MAGAZINELUIZA\\AppData\\Local\\Yarn\\bin;C:\\Users\\MAGAZINELUIZA\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\MAGAZINELUIZA\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\laragon\\bin\\cmder\\;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 78 Stepping 3, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "4e03",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "C\bL\bI\bN\bK\b \b$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "sublime_text": "C:\\Program Files\\Sublime Text 3\\sublime_text.exe",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\MAGAZI~1\\AppData\\Local\\Temp",
+    "TERM": "cygwin",
+    "TER_TITLE": "chat-teste",
+    "TMP": "C:\\Users\\MAGAZI~1\\AppData\\Local\\Temp",
+    "user-aliases": "C:\\laragon\\bin\\cmder\\config\\user-aliases.cmd",
+    "USERDOMAIN": "DESKTOP-OKLDR93",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-OKLDR93",
+    "USERNAME": "MAGAZINELUIZA",
+    "USERPROFILE": "C:\\Users\\MAGAZINELUIZA",
+    "USER_DIR": "C:\\laragon\\usr",
+    "USR_DIR": "C:\\laragon\\usr",
+    "VBOX_MSI_INSTALL_PATH": "C:\\Program Files\\Oracle\\VirtualBox\\",
+    "verbose-output": "0 ",
+    "windir": "C:\\WINDOWS",
+    "YARN_WRAP_OUTPUT": "false"
+  },
+  "sharedObjects": [
+    "C:\\laragon\\bin\\nodejs\\node-v12\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}
