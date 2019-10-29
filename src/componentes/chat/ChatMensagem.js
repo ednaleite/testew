@@ -15,8 +15,7 @@ class ChatMensagem extends Component{
 
    inputEnviaTexto(){
 
-        // var objScrDiv = document.getElementsByClassName("chat-conversa");
-        // objScrDiv.scrollTop = objScrDiv.scrollHeight;
+        
 
         const b = document.getElementById('input');
         
@@ -31,9 +30,11 @@ class ChatMensagem extends Component{
             contexto = this.props.resposta.data.context
         }
 
+        if(b.value != ""){
         this.props.enviaTexto(mensagem)
         this.props.conversaWatson(mensagem, contexto)
         b.value = ''
+          }
      }
    
 
@@ -43,11 +44,12 @@ class ChatMensagem extends Component{
             <div className='chat-mensagem'>
                 <hr/>
                 <InputGroup>
-                <Input placeholder=' Pergunte-me' id="input" required/>
+                <Input placeholder='Pergunte-me' id="input" required/>
                <InputGroupAddon addonType='append'>
                    <Button color='dark' onClick={this.inputEnviaTexto} >Enviar</Button>
                </InputGroupAddon>
                 </InputGroup>
+            
             </div>
         );
     }

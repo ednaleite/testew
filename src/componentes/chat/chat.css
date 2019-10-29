@@ -1,46 +1,84 @@
+#link{
+  color: blue;
+}
+
+.input-group{
+  margin-top: -1%;
+}
+
 .chat-conteudo{
     display: grid;
-    grid-template-rows: 30px auto 80px;
-    height: calc(100vh - 160px);
+    grid-template-rows: 40px auto 40vw;
+    height: calc(100vh - 220px);
+
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 400px) {
+  .chat-conteudo{
+    display: grid;
+    grid-template-rows: 40px auto 27vw;
+    height: calc(100vh - 220px);
+
+}}
+
+@media screen and (min-width: 411px) and (max-width: 420px) {
+  .chat-conteudo{
+    display: grid;
+    grid-template-rows: 40px auto 20vw;
+    height: calc(100vh - 220px);
+
+}
 
 }
 
 .chat-header{
 text-align: center;
 }
-
+ 
 
 .chat-conversa{
-overflow: scroll;
+overflow: auto;
 }
  
 .usuario{
-    padding: 7px 7px;
+    padding: 7px;
     display: flex;
     flex-direction: row;
-    min-width: 100%;
+
 }
 
 .iracema{
     padding: 7px 7px;
     display: flex;
     flex-direction: row;
-    min-width: 100%;
+ 
   
 }
 
+
+
+
+.ROOT_CSS{
+width: 85vw;
+height: 110vw ;
+}
+
 .chat-mensagem{
-    padding: 2px 7px;
+    margin-left: 2%;
+    width: 80vw;
+    /* height: 90vw; */
+
 }
 
 
 #fechar{
-    margin-left: 85%;
+    margin-left: 86%;
 }
 
 #imgx{
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 
 #conteudo{
@@ -48,13 +86,13 @@ overflow: scroll;
    border-radius: 8px 8px;
    display: none;
    position: relative;
-   width: 120%;
+   width: 85vw;
+   height: 145vw;
 }
 
 #userconversa{
   width:50px;
   height: 48px;
-  border-radius: 50%;
 }
 
 #botconversa{
@@ -70,19 +108,30 @@ overflow: scroll;
 }
 
 #textouc{
-  width:95%;
-  margin-left: 3%;
+  width:65vw;
+  margin-left: 2%;
 } 
 
 #teste2{
-  width:95%;
+  width:100%;
+  height: 100%; 
+  word-wrap: break-word;
+}
+#teste3{
+  width:100%;
+  height: 100%; 
+  word-wrap: break-word;
+}
+
+#teste4{
+  width:100%;
   height: 100%; 
   word-wrap: break-word;
 }
 
 #textobc{
-  width:95%;
-  margin-left: 3%;
+  width:65vw;
+  margin-left: 2%;
 } 
 
 

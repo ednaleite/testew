@@ -38,7 +38,7 @@ export const conversaWatson = ((mensagem, contexto) => {
         console.log("mensagem.texto", mensagem.texto)
         console.log("contexto", contexto)
         //const url = 'https://us-central1-chatbot-restaurantes.cloudfunctions.net/conversa'
-        const url = 'https://us-central1-chatbot-8da63.cloudfunctions.net/conversa'
+        const url = 'http://localhost:5000/chatbot-8da63/us-central1/conversa'
         axios
             .post(url, { input: {text: mensagem.texto}, context: contexto })
             .then((data) => {

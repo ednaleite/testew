@@ -1,56 +1,282 @@
 import React, {Component} from 'react'
-import {Alert,Badge} from 'reactstrap'
+import {Alert} from 'reactstrap'
 import {connect} from 'react-redux'
 import '../chat/chat.css';
 
 
+
 class ChatConversa extends Component{
+  
   
    renderMensagem(msg,k){
     
+    // if(msg.texto.substr(0,3) == "Por"){
+        // if(!localStorage.getItem('contadorV')){
+        //     localStorage.setItem('contadorV', 1);
+        // }
+        
+        // switch(localStorage.getItem('contadorV')){
+        //     case '1': 
+        //             var textto = 'Seu nome';
+        //             localStorage.setItem('contadorV', 2);
+        //             break;
+        //     case '2': 
+        //             var textto = 'Seu CPF';
+        //             break;
+        //     default:
+        //             var textto = 'Eu odeio minha vida';
+        //             break;
+        // }
+        
+    //     return (
+                        
+    //         <div key = {k}>
+        
+    //     {
+    //         msg.origem === "user" && <span>
+              
+    //         <div className='usuario'>
+          
+    //         <div id='textouc'>
+    //                 <Alert color='info' id='teste'>{msg.texto}</Alert>
+    //         </div>
 
-     
-   return (
+    //             <div>
+    //                 <img src='images/duvidas.png' id='userconversa'/>
+    //             </div>
+            
+    //     </div>
+            
+    //     </span>
+        
+    //     }
+
+    //     {
+    //         msg.origem === "bot" && <span>
+    //             <div className='iracema' id='fazendolink'>
+    //                 <div>
+    //                     <img src='images/iracema.jpg' id='botconversa'/>
+    //                 </div>
+                    
+    //                 <div id='textobc'>
+    //                     <Alert color='dark' id='teste4'><span>{msg.texto}</span>
+    //                     <br/><br/>
+    //                     {textto}
+    //                     </Alert>
+    //                 </div>
+    //             </div>
+    //         </span>
+    //     }
+        
+    //         </div>
+
+
+    // )
+    // } 
+    var MensagemWhats = "Olá, gostaria de saber sobre o atendimento póstumo";
+    localStorage.setItem('MensagemWhats', "https://wa.me/85989269491/?text=" + MensagemWhats.replace(/ /gi,'%20'));
+
+
+     if(msg.texto.substr(0,3) == "Ate"){
+        return (
+                        
             <div key = {k}>
-          {
-              msg.origem === "user" && <span>
-                 
-              {/* <Badge color='info' id="usertalk">Você disse</Badge> */}
-             
+        
+        {
+            msg.origem === "user" && <span>
+              
+           
+            
             <div className='usuario'>
-
+          
             <div id='textouc'>
                     <Alert color='info' id='teste'>{msg.texto}</Alert>
-               </div>
+            </div>
 
                 <div>
                     <img src='images/duvidas.png' id='userconversa'/>
                 </div>
-               
-           </div>
+            
+        </div>
             
         </span>
-          
-          }
+        
+        }
 
-          {
+        {
+            
             msg.origem === "bot" && <span>
-                <div className='iracema'>
+                
+                <div className='iracema' id='fazendolink'>
                     <div>
-            <img src='images/iracema.jpg' id='botconversa'/>
+                        <img src='images/iracema.jpg' id='botconversa'/>
                     </div>
-                    <div id='textobc'>
-            <Alert color='dark' id='teste2'>{msg.texto}</Alert>
-                    </div>
-            </div>
+                    <a id='textobc' href={MensagemWhats}>
+                     
+                            <Alert color='dark' id='teste3'>Clique aqui para conversar com nosso atendente<br/><span id='link'>{msg.texto}</span></Alert>
+                    </a>
+                </div>
             </span>
-          }
-             </div>
+        }
+        
+            </div>
 
 
-      )
- }
-   
+    )
+
+    }
+
+
+    if(msg.texto.substr(0,3) == "Olá"){
+        return (
+                        
+            <div key = {k}>
+        
+        {
+            msg.origem === "user" && <span>
+              
+           
+            
+            <div className='usuario'>
+          
+            <div id='textouc'>
+                    <Alert color='info' id='teste'>{msg.texto}</Alert>
+            </div>
+
+                <div>
+                    <img src='images/duvidas.png' id='userconversa'/>
+                </div>
+            
+        </div>
+            
+        </span>
+        
+        }
+
+        {
+            msg.origem === "bot" && <span>
+                <div className='iracema' id='fazendolink'>
+                    <div>
+                        <img src='images/iracema.jpg' id='botconversa'/>
+                    </div>
+                    
+                    <div id='textobc'>
+                        <Alert color='dark' id='teste4'><span>{msg.texto}</span>
+                        <br/><br/>
+                            Digite:<br/>
+                            1 - Contatos<br/>
+                            2 - Planos<br/>
+                            3 - Solicitar representante<br/>
+                            4 - Atendimento póstumo
+                        </Alert>
+                    </div>
+                </div>
+            </span>
+        }
+        
+            </div>
+
+
+    )
+
+    }
+    
+        if(msg.texto.substr(0, 5) == 'https'){
+            return (
+                        
+                <div key = {k}>
+            
+            {
+                msg.origem === "user" && <span>
+                    
+                {/* <Badge color='info' id="usertalk">Você disse</Badge> */}
+                
+                <div className='usuario'>
+
+                <div id='textouc'>
+                        <Alert color='info' id='teste'>{msg.texto}</Alert>
+                </div>
+
+                    <div>
+                        <img src='images/duvidas.png' id='userconversa'/>
+                    </div>
+                
+            </div>
+                
+            </span>
+            
+            }
+
+            {
+                msg.origem === "bot" && <span>
+                    <div className='iracema' id='fazendolink'>
+                        <div>
+                            <img src='images/iracema.jpg' id='botconversa'/>
+                        </div>
+                        
+                        <a id='textobc' href={msg.texto}>
+                            <Alert color='dark' id='teste3'>Clique aqui:<br/><span id='link'>{msg.texto}</span></Alert>
+                        </a>
+                    </div>
+                </span>
+            }
+            
+                </div>
+
+
+        )
+            
+        }else{
+            return (
+            
+                <div key = {k}>
+            
+            {
+                msg.origem === "user" && <span>
+                    
+                {/* <Badge color='info' id="usertalk">Você disse</Badge> */}
+                
+                <div className='usuario'>
+
+                <div id='textouc'>
+                        <Alert color='info' id='teste'>{msg.texto}</Alert>
+                </div>
+
+                    <div>
+                        <img src='images/duvidas.png' id='userconversa'/>
+                    </div>
+                
+            </div>
+                
+            </span>
+            
+            }
+
+            {
+                msg.origem === "bot" && <span>
+                    <div className='iracema' id='fazendolink'>
+                        <div>
+                            <img src='images/iracema.jpg' id='botconversa'/>
+                        </div>
+                        
+                        <div id='textobc'>
+                            <Alert color='dark' id='teste2'>{msg.texto}</Alert>
+                        </div>
+                    </div>
+                </span>
+            }
+            
+                </div>
+    
+            )
+        }
+
+            
+            
+            
+    
+}
+
    
     render(){
     
